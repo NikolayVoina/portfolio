@@ -23,7 +23,7 @@ flowchart LR
 
 ## Design choices
 
-- **The master CV is the only source of facts.** Each tailored bullet references a fact id. The validator rejects numbers that are not in that fact, technologies that are not in the master CV and any experience claim above "almost three years".
+- **The master CV is the only source of facts.** Each tailored bullet references a fact id. The validator rejects numbers that are not in that fact, technologies that are not in the master CV and any experience claim above "almost three years". The code is in [check.py](../code/check.py).
 - **Gaps are honest.** Missing skills that can be learned in about two months go to a "Currently learning" line and a learning plan. Heavier gaps lower the fit score instead.
 - **Salary ask.** The midpoint of a posted range, or the median of similar vacancies in the same market and level, and only when at least five vacancies from three companies post a range.
 
